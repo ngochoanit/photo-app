@@ -1,0 +1,18 @@
+.banner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+
+    background-image: url(../../assets/images/orange-bg.jpg);
+    background-position: center;
+    background-size: cover;
+
+    &__title {
+        color: rgba(255, 255, 255, 0.85);
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        text-transform: uppercase;
+    }
+}
