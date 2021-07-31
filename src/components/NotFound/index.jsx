@@ -1,9 +1,10 @@
 import React from 'react';
+import Images from 'constants/Images'
 
 function NotFound(props) {
     return (
         <div className="not-found">
-            <img src='../../../assets/images/not-found.jpg'></img>
+            <img src={Images.NotFound}></img>
         </div>
     );
 }

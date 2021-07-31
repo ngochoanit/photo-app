@@ -1,8 +1,9 @@
 import './App.css';
 import React, { Suspense } from 'react';
 import { BrowserRouter, Redirect, Route, Switch, Link } from 'react-router-dom';
-import NotFound from './components/NotFound'
-import Header from './components/Header'
+import NotFound from 'components/NotFound';
+import Header from 'components/Header';
+
 
 //lazy load - code splitting
 const Photo = React.lazy(() => import('./features/Photo'));
@@ -21,7 +22,6 @@ function App() {
             <Route>
               <NotFound></NotFound>
             </Route>
-
           </Switch>
         </BrowserRouter>
       </Suspense>
